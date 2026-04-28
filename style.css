@@ -1,0 +1,123 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 24px 0 10px 0;
+}
+
+.tab-button {
+    border: 1px solid #d4d7db;
+    background: #fff;
+    color: #2c3e50;
+    font-size: 0.95rem;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background: #2ecc71;
+    border-color: #2ecc71;
+    color: #fff;
+}
+
+.tab-panel.hidden {
+    display: none;
+}
+
+.neuron-section {
+    background: white;
+    margin: 40px 0;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+h2 { border-left: 5px solid #2ecc71; padding-left: 15px; color: #2c3e50; }
+
+.neuron-title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 1.5em;
+    margin: 0;
+}
+.neuron-title .title-line {
+    display: block;
+    margin: 0.2em 0;
+    font-weight: 600;
+}
+
+.neuron-description {
+    font-size: 0.95em;
+    color: #555;
+    margin: 0.5em 0 1em 0;
+    padding-left: 15px;
+    border-left: 3px solid #ddd;
+    font-style: italic;
+}
+
+/* Top Activation Grid */
+.top-activations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.neuron-audio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 15px;
+}
+
+.neuron-audio-item {
+    border: 1px solid #ececec;
+    border-radius: 8px;
+    padding: 12px;
+    background: #fafafa;
+}
+
+.audio-item p {
+    margin: 0 0 8px 0;
+}
+
+/* Steering Table */
+.steering-table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #eee;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+th { background-color: #f8f9fa; }
+
+audio { width: 150px; height: 35px; }

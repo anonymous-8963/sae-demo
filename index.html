@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAE Audio Interpretability Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MusicSAE Steering and Audio Manipulation Demo</h1>
+    </header>
+
+    <main>
+        <nav class="tabs" aria-label="Demo pages">
+            <button type="button" class="tab-button active" data-tab="main">Main</button>
+            <button type="button" class="tab-button" data-tab="neuron">Ablation (Proposed Method)</button>
+            <button type="button" class="tab-button" data-tab="no-residual">Ablation (No Residual Compensation)</button>
+            <button type="button" class="tab-button" data-tab="no-sae">Ablation (Steer on original latent)</button>
+            <button type="button" class="tab-button" data-tab="no-sae-bottleneck">Ablation (Steer on original latent)</button>
+        </nav>
+
+        <section id="main-page-panel" class="tab-panel"></section>
+        <section id="neuron-page-panel" class="tab-panel hidden"></section>
+        <section id="no-residual-page-panel" class="tab-panel hidden"></section>
+        <section id="no-sae-page-panel" class="tab-panel hidden"></section>
+        <section id="no-sae-bottleneck-page-panel" class="tab-panel hidden"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
