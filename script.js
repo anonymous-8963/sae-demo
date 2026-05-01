@@ -5,6 +5,7 @@ const neuronConfig = [
     { model: 'Stable Audio Open', layer: 'bottleneck (L0 = 10, ε = 8)', neuronId: 67, description: 'Description: Overdrive', strengths: [-3, 0, 1, 2, 3, 4] },
     { model: 'Stable Audio Open', layer: 'decoder layer 1 (L0 = 10, ε = 2)', neuronId: 40, description: 'Description: Low Boost', strengths: [-20, 0, 10, 20, 30, 40] },
     { model: 'Stable Audio Open', layer: 'decoder layer 2 (L0 = 10, ε = 8)', neuronId: 1331, description: '', strengths: [-20, 0, 10, 20, 30, 40] },
+    { model: 'Stable Audio Open', layer: 'decoder layer 3 (L0 = 10, ε = 4)', neuronId: 102, description: '', strengths: [-20, 0, 10, 20, 30, 40] },
 ];
 
 const defaultStrengths = [-1, 0, 0.4, 0.8, 1.5, 3];
